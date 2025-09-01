@@ -1,0 +1,796 @@
+{
+  "assessment_metadata": {
+    "assessment_date": "2025-09-01T11:13:58.435567",
+    "sample_size": 4992,
+    "total_files_analyzed": 24,
+    "assessment_scope": "sample_analysis"
+  },
+  "overall_quality": {
+    "composite_score": 79.86,
+    "dimension_scores": {
+      "completeness": 76.04,
+      "uniqueness": 99.32,
+      "validity": 95.81,
+      "consistency": 65.91,
+      "timeliness": 47.64
+    },
+    "standards_compliance": {
+      "completeness": "True",
+      "uniqueness": true,
+      "validity": "True",
+      "consistency": "False",
+      "timeliness": "False"
+    }
+  },
+  "dimension_assessments": {
+    "completeness": {
+      "dimension": "completeness",
+      "overall_score": 76.04,
+      "critical_fields_score": 99.7,
+      "optional_fields_score": 20.85,
+      "meets_quality_standards": "True",
+      "analysis": {
+        "critical_fields": {
+          "event_id": {
+            "total_records": 4992,
+            "missing_count": 0,
+            "present_count": 4992,
+            "completeness_percentage": 100.0,
+            "meets_threshold": true,
+            "threshold": 95.0
+          },
+          "summary": {
+            "total_records": 4992,
+            "missing_count": 0,
+            "present_count": 4992,
+            "completeness_percentage": 100.0,
+            "meets_threshold": true,
+            "threshold": 95.0
+          },
+          "category": {
+            "total_records": 4992,
+            "missing_count": 0,
+            "present_count": 4992,
+            "completeness_percentage": 100.0,
+            "meets_threshold": true,
+            "threshold": 95.0
+          },
+          "found_at": {
+            "total_records": 4992,
+            "missing_count": 0,
+            "present_count": 4992,
+            "completeness_percentage": 100.0,
+            "meets_threshold": true,
+            "threshold": 95.0
+          },
+          "confidence": {
+            "total_records": 4992,
+            "missing_count": 0,
+            "present_count": 4992,
+            "completeness_percentage": 100.0,
+            "meets_threshold": true,
+            "threshold": 95.0
+          },
+          "company_name": {
+            "total_records": 4992,
+            "missing_count": 91,
+            "present_count": 4901,
+            "completeness_percentage": 98.18,
+            "meets_threshold": true,
+            "threshold": 95.0
+          }
+        },
+        "optional_fields": {
+          "location": {
+            "total_records": 4992,
+            "missing_count": 3579,
+            "present_count": 1413,
+            "completeness_percentage": 28.31,
+            "meets_threshold": false,
+            "threshold": 70.0
+          },
+          "amount": {
+            "total_records": 4992,
+            "missing_count": 4709,
+            "present_count": 283,
+            "completeness_percentage": 5.67,
+            "meets_threshold": false,
+            "threshold": 70.0
+          },
+          "effective_date": {
+            "total_records": 4992,
+            "missing_count": 3083,
+            "present_count": 1909,
+            "completeness_percentage": 38.24,
+            "meets_threshold": false,
+            "threshold": 70.0
+          },
+          "contact": {
+            "total_records": 4992,
+            "missing_count": 4280,
+            "present_count": 712,
+            "completeness_percentage": 14.26,
+            "meets_threshold": false,
+            "threshold": 70.0
+          },
+          "award": {
+            "total_records": 4992,
+            "missing_count": 4826,
+            "present_count": 166,
+            "completeness_percentage": 3.33,
+            "meets_threshold": false,
+            "threshold": 70.0
+          },
+          "product": {
+            "total_records": 4992,
+            "missing_count": 3230,
+            "present_count": 1762,
+            "completeness_percentage": 35.3,
+            "meets_threshold": false,
+            "threshold": 70.0
+          }
+        }
+      },
+      "issues_identified": {
+        "problematic_fields_count": 6,
+        "problematic_fields": [
+          "location",
+          "amount",
+          "effective_date",
+          "contact",
+          "award",
+          "product"
+        ],
+        "most_incomplete_field": "award"
+      },
+      "recommendations": [
+        "Implement data collection improvements at source systems",
+        "Add validation checks to prevent missing critical data"
+      ],
+      "sample_issues": [
+        {
+          "missing_field": "company_name",
+          "event_id": "80d84ddf-e396-43fb-9376-cd45df32091e",
+          "available_data": {
+            "event_id": "80d84ddf-e396-43fb-9376-cd45df32091e",
+            "summary": "Ian Truesdale left Unipart Manufacturing Group as Managing Director on Feb 1st '25.",
+            "category": "leaves",
+            "found_at": "2025-02-03T00:00:00Z",
+            "confidence": 0.314
+          }
+        },
+        {
+          "missing_field": "location",
+          "event_id": "009be1ff-6cfb-4e9f-a415-69baf71f47f3",
+          "available_data": {
+            "event_id": "009be1ff-6cfb-4e9f-a415-69baf71f47f3",
+            "summary": "OOS International received award two safety awards on Jan 1st '18.",
+            "category": "receives_award",
+            "found_at": "2019-12-19T10:45:17Z",
+            "confidence": 0.9497
+          }
+        },
+        {
+          "missing_field": "amount",
+          "event_id": "0020f127-3470-4cce-8989-1c79f45da217",
+          "available_data": {
+            "event_id": "0020f127-3470-4cce-8989-1c79f45da217",
+            "summary": "Unipart Manufacturing Group recognized as Transport and Storage sector winner.",
+            "category": "recognized_as",
+            "found_at": "2022-07-10T20:00:00Z",
+            "confidence": 0.8759
+          }
+        },
+        {
+          "missing_field": "effective_date",
+          "event_id": "0020f127-3470-4cce-8989-1c79f45da217",
+          "available_data": {
+            "event_id": "0020f127-3470-4cce-8989-1c79f45da217",
+            "summary": "Unipart Manufacturing Group recognized as Transport and Storage sector winner.",
+            "category": "recognized_as",
+            "found_at": "2022-07-10T20:00:00Z",
+            "confidence": 0.8759
+          }
+        },
+        {
+          "missing_field": "contact",
+          "event_id": "0020f127-3470-4cce-8989-1c79f45da217",
+          "available_data": {
+            "event_id": "0020f127-3470-4cce-8989-1c79f45da217",
+            "summary": "Unipart Manufacturing Group recognized as Transport and Storage sector winner.",
+            "category": "recognized_as",
+            "found_at": "2022-07-10T20:00:00Z",
+            "confidence": 0.8759
+          }
+        }
+      ]
+    },
+    "uniqueness": {
+      "dimension": "uniqueness",
+      "overall_score": 99.32,
+      "duplicate_rate_percentage": 0.68,
+      "meets_quality_standards": true,
+      "analysis": {
+        "event_id_duplicates": {
+          "duplicate_count": 2,
+          "unique_count": 4991,
+          "duplicate_percentage": 0.04,
+          "examples": {
+            "0b266a72-c006-4213-bd82-f3ce3bfda54b": 2
+          }
+        },
+        "summary_duplicates": {
+          "duplicate_count": 34,
+          "unique_count": 4975,
+          "duplicate_percentage": 0.68,
+          "examples": {
+            "Fairharvest partners with Nature Conservation.": 2,
+            "Nabtech Digitalnet Limited identified as competitor of Bluehost Inc..": 2,
+            "Cendyn Group acquires Guestfolio.": 2,
+            "Wessex Water Limited received award Customer Service Excellence on Jan 1st '08.": 2,
+            "Blushield is developing version of the Ultra unit: the Premium Ultra.": 2
+          }
+        },
+        "fuzzy_duplicates": {
+          "fuzzy_duplicate_pairs": 18,
+          "examples": [
+            {
+              "text1": "Foxconn Technology Group invested into assets: manufacturing plant in the amount of $10B in United S...",
+              "text2": "Foxconn Technology Group invested into assets: manufacturing plant in the amount of $10B in Wisconsi...",
+              "similarity": 0.921
+            },
+            {
+              "text1": "Santander acquired Santander Consumer plc for $0 on Aug 2nd '21.",
+              "text2": "shusa acquired Santander Consumer plc for $0 on Aug 24th '21.",
+              "similarity": 0.88
+            },
+            {
+              "text1": "Tempur Sealy recognized as #1 in Customer Satisfaction for the retail mattress category in the U.S. ...",
+              "text2": "Tempur Sealy recognized as #1 in Customer Satisfaction for both the Retail Mattress and Online Mattr...",
+              "similarity": 0.864
+            },
+            {
+              "text1": "ICC partners with UNICEF.",
+              "text2": "Liqteq partners with UNICEF.",
+              "similarity": 0.868
+            },
+            {
+              "text1": "ICC partners with UNICEF.",
+              "text2": "Duke partners with UNICEF.",
+              "similarity": 0.863
+            }
+          ],
+          "similarity_threshold_used": 0.85
+        },
+        "composite_duplicates": {
+          "composite_duplicate_count": 1942,
+          "fields_analyzed": [
+            "company_name",
+            "category",
+            "effective_date"
+          ],
+          "duplicate_groups": {
+            "daaaa79975819404340de78d2b26edcd": 62,
+            "84568a1f492d0a7cdaaa0db735da9224": 53,
+            "8f8d5eb5bc22d80c66d2e9afaeac99d6": 42,
+            "016d1ee7ef393f9c01dd0e99a8f5b544": 41,
+            "b35590aee951cb43aae6858968a67f0f": 31
+          }
+        }
+      },
+      "issues_identified": {
+        "total_duplicate_records": 34,
+        "highest_duplicate_type": "summary"
+      },
+      "recommendations": [
+        "Implement unique constraint on event_id - found 2 duplicates",
+        "Review summary extraction logic - found 34 identical summaries",
+        "Implement semantic deduplication - found 18 similar summaries",
+        "Implement automated duplicate detection in data pipeline",
+        "Add composite key validation for event uniqueness"
+      ]
+    },
+    "validity": {
+      "dimension": "validity",
+      "overall_score": 95.81,
+      "meets_quality_standards": "True",
+      "analysis": {
+        "event_id_format": {
+          "total_checked": 4992,
+          "valid_count": 4992,
+          "invalid_count": 0,
+          "validity_percentage": 100.0,
+          "invalid_examples": []
+        },
+        "confidence_scores": {
+          "total_checked": 4992,
+          "valid_count": 4992,
+          "invalid_count": 0,
+          "validity_percentage": 100.0,
+          "invalid_examples": [],
+          "out_of_range_stats": {
+            "below_zero": 0,
+            "above_one": 0
+          }
+        },
+        "date_formats": {
+          "total_checked": 4992,
+          "valid_count": 4992,
+          "invalid_count": 0,
+          "validity_percentage": 100.0,
+          "invalid_examples": []
+        },
+        "category_values": {
+          "total_checked": 4992,
+          "valid_count": 3945,
+          "invalid_count": 1047,
+          "validity_percentage": 79.03,
+          "expected_categories": [
+            "acquires",
+            "announces",
+            "partners_with",
+            "is_developing",
+            "receives_award",
+            "expands",
+            "launches",
+            "recognized_as",
+            "hires",
+            "receives_financing"
+          ],
+          "found_categories": [
+            "launches",
+            "partners_with",
+            "hires",
+            "recognized_as",
+            "receives_award",
+            "is_developing",
+            "invests_into",
+            "acquires",
+            "invests_into_assets",
+            "has_issues_with",
+            "attends_event",
+            "receives_financing",
+            "expands_facilities",
+            "leaves",
+            "opens_new_location",
+            "signs_new_client",
+            "increases_headcount_by",
+            "closes_offices_in",
+            "sells_assets_to",
+            "integrates_with",
+            "identified_as_competitor_of",
+            "promotes",
+            "expands_offices_to",
+            "decreases_headcount_by",
+            "retires_from",
+            "files_suit_against",
+            "merges_with",
+            "expands_offices_in",
+            "goes_public"
+          ],
+          "invalid_categories": [
+            "expands_facilities",
+            "merges_with",
+            "closes_offices_in",
+            "invests_into",
+            "leaves",
+            "expands_offices_to",
+            "retires_from",
+            "identified_as_competitor_of",
+            "opens_new_location",
+            "goes_public",
+            "integrates_with",
+            "has_issues_with",
+            "files_suit_against",
+            "attends_event",
+            "sells_assets_to",
+            "signs_new_client",
+            "invests_into_assets",
+            "promotes",
+            "decreases_headcount_by",
+            "increases_headcount_by",
+            "expands_offices_in"
+          ],
+          "category_distribution": {
+            "launches": 1615,
+            "partners_with": 1024,
+            "hires": 563,
+            "recognized_as": 223,
+            "receives_award": 166,
+            "is_developing": 147,
+            "invests_into": 146,
+            "acquires": 132,
+            "invests_into_assets": 110,
+            "has_issues_with": 105,
+            "attends_event": 85,
+            "receives_financing": 75,
+            "expands_facilities": 74,
+            "leaves": 69,
+            "opens_new_location": 63,
+            "signs_new_client": 54,
+            "increases_headcount_by": 49,
+            "closes_offices_in": 43,
+            "sells_assets_to": 38,
+            "integrates_with": 33,
+            "identified_as_competitor_of": 30,
+            "promotes": 27,
+            "expands_offices_to": 22,
+            "decreases_headcount_by": 21,
+            "retires_from": 20,
+            "files_suit_against": 17,
+            "merges_with": 15,
+            "expands_offices_in": 15,
+            "goes_public": 11
+          }
+        },
+        "amount_values": {
+          "total_checked": 283,
+          "valid_count": 283,
+          "invalid_count": 0,
+          "validity_percentage": 100.0,
+          "invalid_examples": [],
+          "negative_amounts": 0
+        }
+      },
+      "issues_identified": {
+        "total_invalid_values": 1047,
+        "total_values_checked": 20251,
+        "overall_invalid_rate": 5.17,
+        "worst_validation_check": "category_values",
+        "worst_validation_score": 79.03
+      },
+      "recommendations": [
+        "Fix Category Values validation - 1047 invalid values found",
+        "Implement schema validation at data ingestion",
+        "Add format validation rules for all structured fields",
+        "Create data validation dashboard for monitoring"
+      ]
+    },
+    "consistency": {
+      "dimension": "consistency",
+      "overall_score": 65.91,
+      "meets_quality_standards": "False",
+      "analysis": {
+        "category_standardization": {
+          "total_categories": 29,
+          "consistency_percentage": 80,
+          "potential_inconsistencies": [
+            {
+              "category1": "invests_into",
+              "category2": "invests_into_assets",
+              "similarity": 0.774,
+              "count1": "146",
+              "count2": "110"
+            },
+            {
+              "category1": "increases_headcount_by",
+              "category2": "decreases_headcount_by",
+              "similarity": 0.909,
+              "count1": "49",
+              "count2": "21"
+            },
+            {
+              "category1": "closes_offices_in",
+              "category2": "expands_offices_in",
+              "similarity": 0.743,
+              "count1": "43",
+              "count2": "15"
+            },
+            {
+              "category1": "expands_offices_to",
+              "category2": "expands_offices_in",
+              "similarity": 0.889,
+              "count1": "22",
+              "count2": "15"
+            }
+          ],
+          "category_distribution": {
+            "launches": 1615,
+            "partners_with": 1024,
+            "hires": 563,
+            "recognized_as": 223,
+            "receives_award": 166,
+            "is_developing": 147,
+            "invests_into": 146,
+            "acquires": 132,
+            "invests_into_assets": 110,
+            "has_issues_with": 105,
+            "attends_event": 85,
+            "receives_financing": 75,
+            "expands_facilities": 74,
+            "leaves": 69,
+            "opens_new_location": 63,
+            "signs_new_client": 54,
+            "increases_headcount_by": 49,
+            "closes_offices_in": 43,
+            "sells_assets_to": 38,
+            "integrates_with": 33,
+            "identified_as_competitor_of": 30,
+            "promotes": 27,
+            "expands_offices_to": 22,
+            "decreases_headcount_by": 21,
+            "retires_from": 20,
+            "files_suit_against": 17,
+            "merges_with": 15,
+            "expands_offices_in": 15,
+            "goes_public": 11
+          },
+          "standardization_opportunities": 4
+        },
+        "location_standardization": {
+          "total_locations": 559,
+          "consistency_percentage": 0,
+          "location_variations": [
+            {
+              "location1": "United Kingdom",
+              "location2": "Leeds, United Kingdom",
+              "count1": "78",
+              "count2": "1"
+            },
+            {
+              "location1": "United Kingdom",
+              "location2": "United Kingdom, SEA",
+              "count1": "78",
+              "count2": "1"
+            },
+            {
+              "location1": "United States",
+              "location2": "Ohio, United States",
+              "count1": "60",
+              "count2": "3"
+            },
+            {
+              "location1": "New York, New York, United States",
+              "location2": "New York, United States",
+              "count1": "23",
+              "count2": "5"
+            },
+            {
+              "location1": "New York, New York, United States",
+              "location2": "Waterford, New York, United States",
+              "count1": "23",
+              "count2": "1"
+            },
+            {
+              "location1": "New York, New York, United States",
+              "location2": "Westbury, New York, United States",
+              "count1": "23",
+              "count2": "1"
+            },
+            {
+              "location1": "New Delhi, India",
+              "location2": "Delhi, India",
+              "count1": "18",
+              "count2": "1"
+            },
+            {
+              "location1": "London, United Kingdom",
+              "location2": "Swindon, United Kingdom",
+              "count1": "15",
+              "count2": "2"
+            },
+            {
+              "location1": "London, United Kingdom",
+              "location2": "Glasgow, United Kingdom",
+              "count1": "15",
+              "count2": "2"
+            },
+            {
+              "location1": "London, United Kingdom",
+              "location2": "Leeds, United Kingdom",
+              "count1": "15",
+              "count2": "1"
+            }
+          ],
+          "top_locations": {
+            "United Kingdom": 78,
+            "India": 73,
+            "United States": 60,
+            "Australia": 53,
+            "New Zealand": 26,
+            "Singapore, Singapore": 25,
+            "New York, New York, United States": 23,
+            "New Delhi, India": 18,
+            "Saudi Arabia": 15,
+            "London, United Kingdom": 15
+          },
+          "standardization_opportunities": 688
+        },
+        "company_name_standardization": {
+          "total_companies": 1259,
+          "consistency_percentage": 90,
+          "name_variations": [
+            {
+              "company1": "OOS International",
+              "company2": "Foton International",
+              "count1": "6",
+              "count2": "1"
+            },
+            {
+              "company1": "UTHealth",
+              "company2": "Health",
+              "count1": "1",
+              "count2": "1"
+            },
+            {
+              "company1": "Saei Group",
+              "company2": "Asahi Group",
+              "count1": "1",
+              "count2": "1"
+            },
+            {
+              "company1": "CEDA International",
+              "company2": "ICDP International",
+              "count1": "1",
+              "count2": "1"
+            },
+            {
+              "company1": "Phi International",
+              "company2": "ICDP International",
+              "count1": "1",
+              "count2": "1"
+            }
+          ],
+          "top_companies": {
+            "Apple": 189,
+            "DHL Express": 161,
+            "Amazon.com, Inc.": 157,
+            "Marriott International, Inc.": 143,
+            "Ericsson": 137,
+            "Foxconn Technology Group": 131,
+            "UNICEF": 104,
+            "HDFC": 94,
+            "Native Instruments GmbH": 81,
+            "Reuters": 75
+          },
+          "standardization_opportunities": 5
+        },
+        "amount_format_consistency": {
+          "total_checked": 283,
+          "consistency_percentage": 93.64,
+          "format_patterns": {
+            "currency_symbol": 265,
+            "comma_separated": 29,
+            "decimal_places": 78,
+            "scientific_notation": 9,
+            "plain_number": 0
+          },
+          "format_examples": [
+            "$155,000",
+            "$1m",
+            "8.8 billion baht",
+            "$2.5M",
+            "$32,000"
+          ]
+        }
+      },
+      "issues_identified": {
+        "total_inconsistencies": 697,
+        "worst_consistency_area": "location_standardization",
+        "worst_consistency_score": 0,
+        "areas_needing_standardization": 2
+      },
+      "recommendations": [
+        "Standardize Category Standardization - found 4 inconsistencies",
+        "Standardize Location Standardization - found 688 inconsistencies",
+        "Create data dictionaries with standard values",
+        "Implement automated standardization rules",
+        "Regular consistency monitoring and cleanup processes"
+      ]
+    },
+    "timeliness": {
+      "dimension": "timeliness",
+      "overall_score": 47.64,
+      "meets_quality_standards": "False",
+      "analysis": {
+        "detection_lag": {
+          "analysis_possible": true,
+          "total_analyzed": 4992,
+          "lag_statistics": {
+            "mean_lag_hours": -399.07,
+            "median_lag_hours": 0.0,
+            "max_lag_hours": 30264.77,
+            "min_lag_hours": -71554.0
+          },
+          "lag_distribution": {
+            "real_time_0_1h": 4416,
+            "fast_1_24h": 340,
+            "delayed_1_7d": 131,
+            "slow_over_7d": 105,
+            "negative_lag": 1206
+          }
+        },
+        "data_freshness": {
+          "analysis_possible": true,
+          "total_analyzed": 4992,
+          "freshness_score": 0.0,
+          "data_age_stats": {
+            "newest_days_ago": 60,
+            "oldest_days_ago": 5363,
+            "mean_age_days": 1514.9,
+            "median_age_days": 1432
+          },
+          "freshness_distribution": {
+            "last_7_days": 0,
+            "last_30_days": 0,
+            "last_90_days": 44,
+            "last_year": 474,
+            "over_1_year": 4518
+          }
+        },
+        "effective_date_timeliness": {
+          "analysis_possible": true,
+          "total_analyzed": 1909,
+          "future_events": 6,
+          "past_events": 1903,
+          "future_percentage": 0.31
+        }
+      },
+      "issues_identified": {
+        "stale_data_percentage": 100.0,
+        "oldest_data_days": 5363,
+        "slow_detection_events": 105,
+        "average_detection_lag_hours": -399.07
+      },
+      "recommendations": [
+        "Increase data refresh frequency - only 0.0% of data is recent",
+        "Implement real-time or near-real-time data ingestion",
+        "Set up automated alerts for stale data detection",
+        "Create data freshness monitoring dashboard"
+      ]
+    }
+  },
+  "priority_issues": [
+    {
+      "dimension": "timeliness",
+      "severity": "high",
+      "score": 47.64,
+      "description": "Timeliness score (47.64%) below standards",
+      "impact": "Stale data reduces relevance for real-time business decisions"
+    },
+    {
+      "dimension": "consistency",
+      "severity": "high",
+      "score": 65.91,
+      "description": "Consistency score (65.91%) below standards",
+      "impact": "Inconsistent values complicate aggregation and reporting"
+    }
+  ],
+  "improvement_roadmap": [
+    {
+      "priority": "high",
+      "dimension": "completeness",
+      "current_score": 76.04,
+      "target_improvement": "15-20 points",
+      "estimated_effort": "medium",
+      "recommendations": [
+        "Implement data collection improvements at source systems",
+        "Add validation checks to prevent missing critical data"
+      ]
+    },
+    {
+      "priority": "high",
+      "dimension": "consistency",
+      "current_score": 65.91,
+      "target_improvement": "15-20 points",
+      "estimated_effort": "medium",
+      "recommendations": [
+        "Standardize Category Standardization - found 4 inconsistencies",
+        "Standardize Location Standardization - found 688 inconsistencies",
+        "Create data dictionaries with standard values"
+      ]
+    },
+    {
+      "priority": "high",
+      "dimension": "timeliness",
+      "current_score": 47.64,
+      "target_improvement": "15-20 points",
+      "estimated_effort": "medium",
+      "recommendations": [
+        "Increase data refresh frequency - only 0.0% of data is recent",
+        "Implement real-time or near-real-time data ingestion",
+        "Set up automated alerts for stale data detection"
+      ]
+    }
+  ]
+}

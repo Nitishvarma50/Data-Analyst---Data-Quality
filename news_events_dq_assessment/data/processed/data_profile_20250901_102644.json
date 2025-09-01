@@ -1,0 +1,1386 @@
+{
+  "data_structure": {
+    "dimensions": {
+      "total_records": 4992,
+      "total_columns": 44,
+      "memory_usage_mb": 27.6
+    },
+    "column_types": {
+      "text_columns": 39,
+      "numeric_columns": 3,
+      "boolean_columns": 2,
+      "datetime_columns": 0
+    },
+    "data_schema": {
+      "event_id": "object",
+      "event_type": "object",
+      "summary": "object",
+      "category": "object",
+      "found_at": "object",
+      "confidence": "float64",
+      "article_sentence": "object",
+      "human_approved": "bool",
+      "planning": "bool",
+      "amount": "object",
+      "amount_normalized": "float64",
+      "assets": "object",
+      "assets_tags": "object",
+      "award": "object",
+      "contact": "object",
+      "division": "object",
+      "effective_date": "object",
+      "event": "object",
+      "financing_type": "object",
+      "financing_type_normalized": "object",
+      "financing_type_tags": "object",
+      "headcount": "float64",
+      "job_title": "object",
+      "job_title_tags": "object",
+      "location": "object",
+      "location_data": "object",
+      "product": "object",
+      "product_data": "object",
+      "product_tags": "object",
+      "recognition": "object",
+      "vulnerability": "object",
+      "company_id": "object",
+      "company_name": "object",
+      "company_domain": "object",
+      "company_ticker": "object",
+      "article_id": "object",
+      "article_title": "object",
+      "article_url": "object",
+      "article_published_at": "object",
+      "article_author": "object",
+      "article_body": "object",
+      "article_image_url": "object",
+      "location_data_first": "object",
+      "source_file": "object"
+    },
+    "column_list": [
+      "event_id",
+      "event_type",
+      "summary",
+      "category",
+      "found_at",
+      "confidence",
+      "article_sentence",
+      "human_approved",
+      "planning",
+      "amount",
+      "amount_normalized",
+      "assets",
+      "assets_tags",
+      "award",
+      "contact",
+      "division",
+      "effective_date",
+      "event",
+      "financing_type",
+      "financing_type_normalized",
+      "financing_type_tags",
+      "headcount",
+      "job_title",
+      "job_title_tags",
+      "location",
+      "location_data",
+      "product",
+      "product_data",
+      "product_tags",
+      "recognition",
+      "vulnerability",
+      "company_id",
+      "company_name",
+      "company_domain",
+      "company_ticker",
+      "article_id",
+      "article_title",
+      "article_url",
+      "article_published_at",
+      "article_author",
+      "article_body",
+      "article_image_url",
+      "location_data_first",
+      "source_file"
+    ]
+  },
+  "column_profiles": {
+    "event_id": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 4991,
+      "unique_percentage": 99.98,
+      "avg_length": 36.0,
+      "max_length": 36,
+      "min_length": 36,
+      "most_frequent": {
+        "0b266a72-c006-4213-bd82-f3ce3bfda54b": 2,
+        "0020f127-3470-4cce-8989-1c79f45da217": 1,
+        "06319373-720b-4f1e-bf00-220c3229f128": 1
+      },
+      "sample_values": [
+        "0020f127-3470-4cce-8989-1c79f45da217",
+        "009be1ff-6cfb-4e9f-a415-69baf71f47f3",
+        "01444124-7375-4f03-8879-eb8200b31504",
+        "031a304c-29ca-415e-a815-e9c915896540",
+        "037783ca-f3f7-4782-8a81-df3cae1ac936"
+      ]
+    },
+    "event_type": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 1,
+      "unique_percentage": 0.02,
+      "avg_length": 10.0,
+      "max_length": 10,
+      "min_length": 10,
+      "most_frequent": {
+        "news_event": 4992
+      },
+      "sample_values": [
+        "news_event",
+        "news_event",
+        "news_event",
+        "news_event",
+        "news_event"
+      ]
+    },
+    "summary": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 4975,
+      "unique_percentage": 99.66,
+      "avg_length": 65.93,
+      "max_length": 258,
+      "min_length": 15,
+      "most_frequent": {
+        "NWN Corporation launches Public Safety Education Bundle.": 2,
+        "TCGplayer, Inc. partners with Buyandship Limited.": 2,
+        "Foxconn Technology Group expands offices in Wisconsin, United States.": 2
+      },
+      "sample_values": [
+        "Unipart Manufacturing Group recognized as Transport and Storage sector winner.",
+        "OOS International received award two safety awards on Jan 1st '18.",
+        "NWN Corporation received award Global Winner for 2022 Microsoft Meetings, Calling & Devices for Microsoft Teams Partner of the Year Award on Jun 28th '22.",
+        "Grape Solutions Plc. is developing Mobiliti app on Jan 1st '18.",
+        "NWN Corporation launched two new kits, At-Home Essentials and Office Collaboration Room-as-a-Service on Apr 13th '22."
+      ]
+    },
+    "category": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 29,
+      "unique_percentage": 0.58,
+      "avg_length": 10.96,
+      "max_length": 27,
+      "min_length": 5,
+      "most_frequent": {
+        "launches": 1615,
+        "partners_with": 1024,
+        "hires": 563
+      },
+      "sample_values": [
+        "recognized_as",
+        "receives_award",
+        "receives_award",
+        "is_developing",
+        "launches"
+      ]
+    },
+    "found_at": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 4639,
+      "unique_percentage": 92.93,
+      "avg_length": 20.0,
+      "max_length": 20,
+      "min_length": 20,
+      "most_frequent": {
+        "2021-12-30T23:00:00Z": 6,
+        "2023-07-31T22:00:00Z": 4,
+        "2021-08-12T05:00:00Z": 4
+      },
+      "sample_values": [
+        "2022-07-10T20:00:00Z",
+        "2019-12-19T10:45:17Z",
+        "2022-07-12T20:00:00Z",
+        "2023-04-02T22:00:00Z",
+        "2022-04-13T01:02:36Z"
+      ]
+    },
+    "confidence": {
+      "data_type": "float64",
+      "total_count": 4992,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 3124,
+      "unique_percentage": 62.58,
+      "min_value": 0.0,
+      "max_value": 1.0,
+      "mean_value": 0.6166,
+      "median_value": 0.6568,
+      "std_deviation": 0.2633,
+      "zero_count": 230,
+      "negative_count": 0,
+      "quartiles": {
+        "q25": 0.475825,
+        "q75": 0.8016
+      }
+    },
+    "article_sentence": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 4913,
+      "unique_percentage": 98.42,
+      "avg_length": 163.14,
+      "max_length": 502,
+      "min_length": 27,
+      "most_frequent": {
+        "Universe, which is based out of Brooklyn, New York, is today launching its first app, for iOS, with $3.2 million in funding from General Catalyst, Greylock Partners (from its development and seed fund), Eniac Ventures and led by Box Group.": 4,
+        "In Melbourne, as reported in Neos Kosmos in 2022, Latrobe University partnered with the Greek Community, the Greek Archdiocese of Australia and the Victorian government to support the modern Greek language program.": 3,
+        "Joining The Motley Fool today are Kirkland's president and CEO, Steve \"Woody\" Woodward, COO and CFO, Nicole Strain, and the company's external director of investor relations, Cody Cree.": 3
+      },
+      "sample_values": [
+        "In addition to being named the safest organisation in the UK, Unipart Logistics won the British Safety Council Chief Adjudicator Award for achieving the highest-scoring application of the 647 received from around the world, and was named Transport and Storage sector winner.",
+        "Since then OOS International has been an active member of the IADC and received two safety awards in 2018.",
+        "As a result, with nearly 400 nominees from over 100 countries, NWN Corporation is pleased to announce NWN Carousel was recognized as a Global Winner for 2022 Microsoft Meetings, Calling & Devices for Microsoft Teams Partner of the Year Award.",
+        "MVM Mobiliti and Grape Solutions have been working together since 2018 to develop the Mobiliti app, becoming the most downloaded electric car charging app in Hungary, with more than 215,000 charging stations in 39 countries.",
+        "NWN Carousel, the leading integrated cloud communications service provider, today announced two new kits, At-Home Essentials and Office Collaboration Room-as-a-Service, for organizations to manage the accelerating demands of the hybrid workplace with connectivity, security, devices and visual collaboration."
+      ]
+    },
+    "human_approved": {
+      "data_type": "bool",
+      "total_count": 4992,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 2,
+      "unique_percentage": 0.04,
+      "true_count": 132,
+      "false_count": 4860,
+      "true_percentage": 2.64
+    },
+    "planning": {
+      "data_type": "bool",
+      "total_count": 4992,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 2,
+      "unique_percentage": 0.04,
+      "true_count": 9,
+      "false_count": 4983,
+      "true_percentage": 0.18
+    },
+    "amount": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 4709,
+      "null_percentage": 94.33,
+      "unique_count": 210,
+      "unique_percentage": 4.21,
+      "avg_length": 10.82,
+      "max_length": 22,
+      "min_length": 3,
+      "most_frequent": {
+        "$10 billion": 14,
+        "$100 million": 7,
+        "$10 million": 6
+      },
+      "sample_values": [
+        "$155,000",
+        "$1m",
+        "8.8 billion baht",
+        "$2.5M",
+        "$32,000"
+      ]
+    },
+    "amount_normalized": {
+      "data_type": "float64",
+      "total_count": 4992,
+      "null_count": 4709,
+      "null_percentage": 94.33,
+      "unique_count": 186,
+      "unique_percentage": 3.73,
+      "min_value": 0.0,
+      "max_value": 68000000000.0,
+      "mean_value": 1388761342.7562,
+      "median_value": 61000000.0,
+      "std_deviation": 5025021466.1741,
+      "zero_count": 3,
+      "negative_count": 0,
+      "quartiles": {
+        "q25": 5556000.0,
+        "q75": 369500000.0
+      }
+    },
+    "assets": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 4874,
+      "null_percentage": 97.64,
+      "unique_count": 99,
+      "unique_percentage": 1.98,
+      "avg_length": 20.77,
+      "max_length": 75,
+      "min_length": 3,
+      "most_frequent": {
+        "factory": 7,
+        "facility": 7,
+        "manufacturing plant": 2
+      },
+      "sample_values": [
+        "energy vehicle (NEV) production plant",
+        "234-room AC Hotel",
+        "125-room Courtyard\nby Marriott Fort Lauderdale SW Miramar",
+        "manufacturing facility",
+        "store"
+      ]
+    },
+    "assets_tags": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 4518,
+      "null_percentage": 90.5,
+      "unique_count": 30,
+      "unique_percentage": 0.6,
+      "avg_length": 16.39,
+      "max_length": 51,
+      "min_length": 6,
+      "most_frequent": {
+        "['education']": 101,
+        "['it']": 73,
+        "['research_and_development']": 70
+      },
+      "sample_values": [
+        "['office']",
+        "['research_and_development']",
+        "['education']",
+        "['production']",
+        "['education']"
+      ]
+    },
+    "award": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 4826,
+      "null_percentage": 96.67,
+      "unique_count": 163,
+      "unique_percentage": 3.27,
+      "avg_length": 37.98,
+      "max_length": 199,
+      "min_length": 10,
+      "most_frequent": {
+        "Customer Service Excellence": 3,
+        "two awards": 2,
+        "two safety awards": 1
+      },
+      "sample_values": [
+        "two safety awards",
+        "Global Winner for 2022 Microsoft Meetings, Calling & Devices for Microsoft Teams Partner of the Year Award",
+        "National Science and Technology Progress Award",
+        "SMB Partner of the Year",
+        "Faculty of Medicine and Health Sciences"
+      ]
+    },
+    "contact": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 4280,
+      "null_percentage": 85.74,
+      "unique_count": 699,
+      "unique_percentage": 14.0,
+      "avg_length": 12.11,
+      "max_length": 30,
+      "min_length": 3,
+      "most_frequent": {
+        "Michael Blomfield": 2,
+        "Jared Gashel": 2,
+        "Logan Sargeant": 2
+      },
+      "sample_values": [
+        "Jim Sullivan",
+        "Dean Fernandes",
+        "Darren Leigh",
+        "Criss Edwards",
+        "Bryan Jackson CBE"
+      ]
+    },
+    "division": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 4992,
+      "null_percentage": 100.0,
+      "unique_count": 0,
+      "unique_percentage": 0.0
+    },
+    "effective_date": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 3083,
+      "null_percentage": 61.76,
+      "unique_count": 1095,
+      "unique_percentage": 21.94,
+      "avg_length": 10.0,
+      "max_length": 10,
+      "min_length": 10,
+      "most_frequent": {
+        "2021-01-01": 49,
+        "2022-01-01": 36,
+        "2023-01-01": 34
+      },
+      "sample_values": [
+        "2018-01-01",
+        "2022-06-28",
+        "2018-01-01",
+        "2022-04-13",
+        "2022-01-01"
+      ]
+    },
+    "event": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 4835,
+      "null_percentage": 96.85,
+      "unique_count": 154,
+      "unique_percentage": 3.08,
+      "avg_length": 29.19,
+      "max_length": 64,
+      "min_length": 8,
+      "most_frequent": {
+        "Accenture HealthTech Innovation Challenge": 2,
+        "ICAI Awards for Excellence in Financial Reporting 2023-24": 2,
+        "third Annual GCC Best Employer Brand Awards 2016": 2
+      },
+      "sample_values": [
+        "Australian Specialist Hub",
+        "2024 Five9 Global Partner Awards",
+        "Accenture HealthTech Innovation Challenge",
+        "Accenture HealthTech Innovation Challenge",
+        "2021 Australian Space Awards"
+      ]
+    },
+    "financing_type": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 4908,
+      "null_percentage": 98.32,
+      "unique_count": 47,
+      "unique_percentage": 0.94,
+      "avg_length": 11.25,
+      "max_length": 39,
+      "min_length": 3,
+      "most_frequent": {
+        "grant": 12,
+        "funding": 7,
+        "initial public offering": 6
+      },
+      "sample_values": [
+        "donations",
+        "grant funding",
+        "initial public offering",
+        "Series A",
+        "initial public offering"
+      ]
+    },
+    "financing_type_normalized": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 4980,
+      "null_percentage": 99.76,
+      "unique_count": 7,
+      "unique_percentage": 0.14,
+      "avg_length": 7.42,
+      "max_length": 8,
+      "min_length": 4,
+      "most_frequent": {
+        "series_a": 4,
+        "series_b": 3,
+        "seed": 1
+      },
+      "sample_values": [
+        "series_a",
+        "seed",
+        "angel",
+        "series_a",
+        "series_d"
+      ]
+    },
+    "financing_type_tags": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 4808,
+      "null_percentage": 96.31,
+      "unique_count": 12,
+      "unique_percentage": 0.24,
+      "avg_length": 10.33,
+      "max_length": 27,
+      "min_length": 7,
+      "most_frequent": {
+        "['equity']": 82,
+        "['grant']": 58,
+        "['donation']": 13
+      },
+      "sample_values": [
+        "['donation']",
+        "['equity', 'grant']",
+        "['equity']",
+        "['grant']",
+        "['grant']"
+      ]
+    },
+    "headcount": {
+      "data_type": "float64",
+      "total_count": 4992,
+      "null_count": 4922,
+      "null_percentage": 98.6,
+      "unique_count": 44,
+      "unique_percentage": 0.88,
+      "min_value": 19.0,
+      "max_value": 63800.0,
+      "mean_value": 2653.6286,
+      "median_value": 300.0,
+      "std_deviation": 8366.4157,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quartiles": {
+        "q25": 144.75,
+        "q75": 1300.0
+      }
+    },
+    "job_title": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 4417,
+      "null_percentage": 88.48,
+      "unique_count": 413,
+      "unique_percentage": 8.27,
+      "avg_length": 26.06,
+      "max_length": 87,
+      "min_length": 2,
+      "most_frequent": {
+        "CEO": 34,
+        "Chief Financial Officer": 13,
+        "Chief Executive Officer": 12
+      },
+      "sample_values": [
+        "CEO and chairman",
+        "Chief Technology Officer",
+        "Unipart Group Executive Chairman",
+        "Managing Director for North America",
+        "Non-Executive Chair"
+      ]
+    },
+    "job_title_tags": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 3937,
+      "null_percentage": 78.87,
+      "unique_count": 129,
+      "unique_percentage": 2.58,
+      "avg_length": 22.04,
+      "max_length": 80,
+      "min_length": 9,
+      "most_frequent": {
+        "['directors']": 149,
+        "['general_technology']": 92,
+        "['marketing']": 76
+      },
+      "sample_values": [
+        "['support']",
+        "['directors']",
+        "['general_technology', 'engineering']",
+        "['purchasing']",
+        "['directors']"
+      ]
+    },
+    "location": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 3579,
+      "null_percentage": 71.69,
+      "unique_count": 559,
+      "unique_percentage": 11.2,
+      "avg_length": 18.34,
+      "max_length": 47,
+      "min_length": 2,
+      "most_frequent": {
+        "United Kingdom": 78,
+        "India": 73,
+        "United States": 60
+      },
+      "sample_values": [
+        "United Kingdom",
+        "Hungary",
+        "Sydney, Australia",
+        "Boston, Massachusetts, United States",
+        "Boston, Massachusetts, United States"
+      ]
+    },
+    "location_data": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 3695,
+      "null_percentage": 74.02,
+      "unique_count": 476,
+      "unique_percentage": 9.54,
+      "avg_length": 136.65,
+      "max_length": 160,
+      "min_length": 123,
+      "most_frequent": {
+        "[{'city': None, 'state': None, 'zip_code': None, 'country': 'United Kingdom', 'region': None, 'continent': None, 'fuzzy_match': False}]": 78,
+        "[{'city': None, 'state': None, 'zip_code': None, 'country': 'India', 'region': None, 'continent': None, 'fuzzy_match': False}]": 71,
+        "[{'city': None, 'state': None, 'zip_code': None, 'country': 'United States', 'region': None, 'continent': None, 'fuzzy_match': False}]": 60
+      },
+      "sample_values": [
+        "[{'city': None, 'state': None, 'zip_code': None, 'country': 'United Kingdom', 'region': None, 'continent': None, 'fuzzy_match': False}]",
+        "[{'city': None, 'state': None, 'zip_code': None, 'country': 'Hungary', 'region': None, 'continent': None, 'fuzzy_match': False}]",
+        "[{'city': 'Sydney', 'state': None, 'zip_code': None, 'country': 'Australia', 'region': None, 'continent': None, 'fuzzy_match': False}]",
+        "[{'city': 'Boston', 'state': 'Massachusetts', 'zip_code': None, 'country': 'United States', 'region': None, 'continent': None, 'fuzzy_match': False}]",
+        "[{'city': 'Boston', 'state': 'Massachusetts', 'zip_code': None, 'country': 'United States', 'region': None, 'continent': None, 'fuzzy_match': False}]"
+      ]
+    },
+    "product": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 3230,
+      "null_percentage": 64.7,
+      "unique_count": 1738,
+      "unique_percentage": 34.82,
+      "avg_length": 33.71,
+      "max_length": 173,
+      "min_length": 3,
+      "most_frequent": {
+        "website": 7,
+        "Hologram Zoo": 2,
+        "MacBook Air": 2
+      },
+      "sample_values": [
+        "Mobiliti app",
+        "two new kits, At-Home Essentials and Office Collaboration Room-as-a-Service",
+        "Model 3800",
+        "Share Purchase Plan",
+        "major assay program at Minbrie"
+      ]
+    },
+    "product_data": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 1739,
+      "unique_percentage": 34.84,
+      "avg_length": 113.4,
+      "max_length": 272,
+      "min_length": 101,
+      "most_frequent": {
+        "{'full_text': None, 'name': None, 'release_type': None, 'release_version': None, 'fuzzy_match': None}": 3230,
+        "{'full_text': 'website', 'name': None, 'release_type': None, 'release_version': None, 'fuzzy_match': True}": 7,
+        "{'full_text': 'campaign featuring renowned cricketer Rishabh Pant', 'name': None, 'release_type': None, 'release_version': None, 'fuzzy_match': True}": 2
+      },
+      "sample_values": [
+        "{'full_text': None, 'name': None, 'release_type': None, 'release_version': None, 'fuzzy_match': None}",
+        "{'full_text': None, 'name': None, 'release_type': None, 'release_version': None, 'fuzzy_match': None}",
+        "{'full_text': None, 'name': None, 'release_type': None, 'release_version': None, 'fuzzy_match': None}",
+        "{'full_text': 'Mobiliti app', 'name': None, 'release_type': None, 'release_version': None, 'fuzzy_match': True}",
+        "{'full_text': 'two new kits, At-Home Essentials and Office Collaboration Room-as-a-Service', 'name': None, 'release_type': None, 'release_version': None, 'fuzzy_match': True}"
+      ]
+    },
+    "product_tags": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 4238,
+      "null_percentage": 84.9,
+      "unique_count": 81,
+      "unique_percentage": 1.62,
+      "avg_length": 22.88,
+      "max_length": 76,
+      "min_length": 8,
+      "most_frequent": {
+        "['online_technology', 'general_technology']": 62,
+        "['marketing']": 60,
+        "['online_technology']": 59
+      },
+      "sample_values": [
+        "['mobile', 'online_technology']",
+        "['general_technology']",
+        "['campaigns']",
+        "['mobile', 'online_technology']",
+        "['future_tech']"
+      ]
+    },
+    "recognition": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 4769,
+      "null_percentage": 95.53,
+      "unique_count": 215,
+      "unique_percentage": 4.31,
+      "avg_length": 50.13,
+      "max_length": 212,
+      "min_length": 6,
+      "most_frequent": {
+        "one of the fastest-growing companies in the United States": 2,
+        "one of Virginia\u2019s Fantastic 50 Companies": 2,
+        "winner": 2
+      },
+      "sample_values": [
+        "Transport and Storage sector winner",
+        "Best Place to Work",
+        "top 50 highest growth companies in Massachusetts",
+        "2025 Partner of the Year for Community Impact",
+        "one of two APAC region finalists"
+      ]
+    },
+    "vulnerability": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 4887,
+      "null_percentage": 97.9,
+      "unique_count": 101,
+      "unique_percentage": 2.02,
+      "avg_length": 40.16,
+      "max_length": 132,
+      "min_length": 11,
+      "most_frequent": {
+        "data breach": 3,
+        "Chapter 11 bankruptcy": 2,
+        "securities fraud or other unlawful business practices": 2
+      },
+      "sample_values": [
+        "alleged failure to properly pay overtime and minimum wages",
+        "lawsuit over alleged junk hotel fees that violate consumer protection laws",
+        "ID theft and credit card fraud",
+        "security breach",
+        "attack and severity of an information leak"
+      ]
+    },
+    "company_id": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 89,
+      "null_percentage": 1.78,
+      "unique_count": 1263,
+      "unique_percentage": 25.3,
+      "avg_length": 36.0,
+      "max_length": 36,
+      "min_length": 36,
+      "most_frequent": {
+        "7b7dbf17-a2ad-54cc-ac66-20995d7f6fba": 189,
+        "77baf71e-9b56-5401-83dd-a9c227530037": 161,
+        "c9b92ffd-a2ed-5787-8b06-f4bf8d291e57": 157
+      },
+      "sample_values": [
+        "000bd323-1bf8-5c7a-9941-e6c155c29d10",
+        "000ff896-4292-5b15-9c81-8bf4d76c10d7",
+        "000d8a9c-882c-57f2-8b4c-2afc786d0fa1",
+        "0008b75f-9d15-54ae-b70a-52301945e397",
+        "000d8a9c-882c-57f2-8b4c-2afc786d0fa1"
+      ]
+    },
+    "company_name": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 91,
+      "null_percentage": 1.82,
+      "unique_count": 1259,
+      "unique_percentage": 25.22,
+      "avg_length": 16.08,
+      "max_length": 61,
+      "min_length": 3,
+      "most_frequent": {
+        "Apple": 189,
+        "DHL Express": 161,
+        "Amazon.com, Inc.": 157
+      },
+      "sample_values": [
+        "Unipart Manufacturing Group",
+        "OOS International",
+        "NWN Corporation",
+        "Grape Solutions Plc.",
+        "NWN Corporation"
+      ]
+    },
+    "company_domain": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 89,
+      "null_percentage": 1.78,
+      "unique_count": 1263,
+      "unique_percentage": 25.3,
+      "avg_length": 13.02,
+      "max_length": 38,
+      "min_length": 5,
+      "most_frequent": {
+        "apple.com": 189,
+        "dhl.com": 161,
+        "amazon.com": 157
+      },
+      "sample_values": [
+        "unipart.com",
+        "oosinternational.com",
+        "nwncarousel.com",
+        "grape.solutions",
+        "nwncarousel.com"
+      ]
+    },
+    "company_ticker": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 3859,
+      "null_percentage": 77.3,
+      "unique_count": 107,
+      "unique_percentage": 2.14,
+      "avg_length": 9.34,
+      "max_length": 13,
+      "min_length": 6,
+      "most_frequent": {
+        "NSDQ:AAPL": 189,
+        "NASDAQ:AMZN": 157,
+        "NASDAQ:MAR": 143
+      },
+      "sample_values": [
+        "ASX:VRL",
+        "NASDAQ:MAR",
+        "NASDAQ:MAR",
+        "LON:BVIC",
+        "NASDAQ:MAR"
+      ]
+    },
+    "article_id": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 4879,
+      "unique_percentage": 97.74,
+      "avg_length": 36.0,
+      "max_length": 36,
+      "min_length": 36,
+      "most_frequent": {
+        "597db004-5946-4cce-931d-aa8dcfa5dbb1": 4,
+        "a7ef2a74-7b6b-44b0-932d-268aadbc2d17": 4,
+        "602039ba-2e0e-4b01-b34f-72885f6557b1": 4
+      },
+      "sample_values": [
+        "d172abc1-3755-4cef-946e-7de944806e7d",
+        "58c0d5fd-068d-4bab-8ac4-47e19bbdf091",
+        "ef330a38-8624-41c1-8b75-d1b96e7dbd45",
+        "0525807d-6ff6-44a0-9c36-8be3afceba5b",
+        "16061c55-111d-496a-9e3e-837dddc3454b"
+      ]
+    },
+    "article_title": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 4855,
+      "unique_percentage": 97.26,
+      "avg_length": 71.27,
+      "max_length": 355,
+      "min_length": 3,
+      "most_frequent": {
+        "Press Releases": 4,
+        "InRoomTM, AI driven gesture-sensing camera technology from FlatFrog, launches in the latest Ricoh Collaboration Board for meeting rooms": 4,
+        "Universe, a mobile-only website builder, lets you create pages in \u2018under a minute\u2019 | TechCrunch": 4
+      },
+      "sample_values": [
+        "Unipart ranked the safest organisation in the world",
+        "OOS International Award for completing another year without a Lost Time Incident",
+        "Skyrocketing Employee Engagement with Microsoft Teams in a Hybrid World | NWN Carousel",
+        "Hungarian development makes electric vehicle charging seamless in the Czech Republic | IQ Fin",
+        "NWN Carousel Launches Two Hybrid Work Solutions to Meet the Needs of Both the Home and Office Worker | Business Wire"
+      ]
+    },
+    "article_url": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 4879,
+      "unique_percentage": 97.74,
+      "avg_length": 102.65,
+      "max_length": 490,
+      "min_length": 24,
+      "most_frequent": {
+        "https://www.prnewswire.com/news-releases/matillion-announces-100-million-funding-to-deliver-on-growing-enterprise-demand-for-cloud-data-integration-301227395.html": 4,
+        "https://techcrunch.com/2017/03/22/universe-a-mobile-only-website-builder-lets-you-create-pages-in-under-a-minute/": 4,
+        "https://www.unipart.com/news/press-releases/": 4
+      },
+      "sample_values": [
+        "https://www.unipart.com/unipart-ranked-the-safest-organisation-in-the-world/",
+        "https://www.oosinternational.com/oos-news/award-for-completing-another-year-without-a-lost-time-incident",
+        "https://nwncarousel.com/blog/skyrocketing-employee-engagement-with-microsoft-teams-in-a-hybrid-world",
+        "https://www.iqfin.net/technology/hungarian-development-makes-electric-vehicle-charging-seamless-czech-republic-6391859",
+        "https://www.businesswire.com/news/home/20220413005109/en/NWN-Carousel-Launches-Two-Hybrid-Work-Solutions-to-Meet-the-Needs-of-Both-the-Home-and-Office-Worker"
+      ]
+    },
+    "article_published_at": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 4663,
+      "unique_percentage": 93.41,
+      "avg_length": 20.0,
+      "max_length": 20,
+      "min_length": 20,
+      "most_frequent": {
+        "2025-02-05T00:00:00Z": 5,
+        "2023-08-22T22:00:00Z": 4,
+        "2023-06-20T22:00:00Z": 4
+      },
+      "sample_values": [
+        "2022-07-10T20:00:00Z",
+        "2019-12-19T10:45:17Z",
+        "2022-07-12T22:00:00Z",
+        "2023-04-02T22:00:00Z",
+        "2022-04-13T03:00:00Z"
+      ]
+    },
+    "article_author": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 4222,
+      "null_percentage": 84.58,
+      "unique_count": 593,
+      "unique_percentage": 11.88,
+      "avg_length": 14.24,
+      "max_length": 172,
+      "min_length": 0,
+      "most_frequent": {
+        "Ronnie": 20,
+        "admin": 19,
+        "Julie Polito": 12
+      },
+      "sample_values": [
+        "admin",
+        "Vanessa",
+        "Gianluca Spataro",
+        "admin",
+        "hello@ruok.org.au"
+      ]
+    },
+    "article_body": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 4872,
+      "unique_percentage": 97.6,
+      "avg_length": 2088.96,
+      "max_length": 95555,
+      "min_length": 108,
+      "most_frequent": {
+        "Matillion, the leading cloud data integration platform, today announced $100M in Series D funding, led by Lightspeed Venture Partners with participation from Battery Ventures, Sapphire Ventures, Scale Venture Partners with financing from Silicon Valley Bank UK Branch*. The funding will fuel the company's growth, as it meets exploding demand for cloud data integration for global enterprise organizations such as Amazon, Siemens, Subway, Novartis, Slack, and Accenture. Matillion solves a key challenge for the enterprise, helping them overcome the struggle to capture and innovate with data to quickly unlock the insights they need. A recent MarketPulse survey by IDG and Matillion found data teams spend nearly half their time preparing data for analytics. Matillion's cloud-native platform enables enterprise organizations to transform raw data into the refined, analytics-ready data required to support business intelligence, visualization, artificial intelligence and machine learning. We're proud to lead Matillion's Series D and partner with Matthew and his team as they continue to scale and deliver rapid returns on cloud investments for global enterprises.\" Matillion was recognized in the 2020 Gartner Magic Quadrant for Data Integration Tools and named a Top Rated Data Integration Tool in 2020 for the second year in a row by TrustRadius, based on unbiased customers' user satisfaction scores. In 2020, it increased the investment in enterprise product and engineering, extended support for the Snowflake user community with Matillion ETL and Matillion Data Loader on Partner Connect, and launched Matillion ETL for Azure Synapse, and Matillion ETL for Databricks.": 4,
+        "The business of platforms for developing websites and publishing online is a crowded one, with established players like WordPress, Wix, Zoho, Weebly, Duda Mobile and Squarespace competing against newer entrants like Medium and the likes of LinkedIn. Now make way for another one: Universe, a startup that hopes its mobile-first approach for building \u201clight\u201d websites on mobile \u2014 the pitch is that these can be built in \u201cunder a minute\u201d \u2014 can give it a unique foothold in the market. Universe, which is based out of Brooklyn, New York, is today launching its first app, for iOS, with $3.2 million in funding from General Catalyst, Greylock Partners (from its development and seed fund), Eniac Ventures and led by Box Group. Universe founder Joseph Cohen said that he envisions Universe sites to be the kind of thing you might find linked on an Instagram profile page. \u201cMillennials are not using the Squarespaces of the world,\u201d he said. \u201cOur intent is to let you be creative in a whole new way.\u201d Sites tacked to Universe\u2019s own domain are free, while those registered with custom domains start at a competitive $2.99/month. Cohen tells me that the idea to build Universe first came to him three years ago after he sold his previous startup, education-tech company Lore, to Noodle Education. (Cohen himself dropped out of U Penn in his sophomore year and never went back). \u201cI\u2019ve been obsessed with this space for three years,\u201d he said. \u201cIt comes from the desire to turn phones into creative devices. The web is still this incredible platform for sharing identities, and there needs to be a mobile-native way for creating for the web.\u201d Universe tackles the balance between creativity and templates to speed things up with a slick interface that presents the real estate of the phone as a 3\u00d75 area, where you can select a background and then start to add text, photos, videos and link modules through a drag and drop interface. Indeed, the intention is not to give serious developers or large organizations one more way to build complex sites with large backends and processes behind them. At launch there isn\u2019t even a module to incorporate purchases \u2014 although this is likely to come in an update, Cohen tells me, along with other features. Nor are there any plans to extend this into a quick native app builder. \u201cWe\u2019ve thought long and hard about apps and explored prototypes,\u201d he said, before coming to the conclusion that \u201cnot everyone should have their own apps. It\u2019s hard to get apps distributed and as a casual user you shouldn\u2019t have to do that.\u201d Instead, the intention is to provide a way of creating simple web-based presences, which could be viral-ready widgets in themselves (think of sites like IsThisForThat or Is the L Train running?) or landing pages for more details about something like an event you\u2019re organizing for yourself. In a way, Universe feels less in the vein of services like Wix or Squarespace and more like other web-based tools that have been built to make other small things on the web that might go viral, like GIF creators or the now-defunct Checkthis (from the same people who then created Frontback). \u201cAbout.me is also too desktop focused,\u201d Cohen countered to my question about the once-AOL-owned online Yellow Pages. Cohen said that a lightbulb went off when he realized that the range of website builders that exist today approach the concept in a very constrained way that is just \u201cnot casual enough.\u201d Notably, Cohen himself doesn\u2019t come from a technical/developer background, which also likely had an influence in how Universe tackled building tech for non-tech people. His investors like to highlight the non-tech element here, too. Josh Elman of Greylock noted that Cohen\u2019s mother has designed event websites using the app, too. \u201cThe most transformative companies change the way we communicate and create,\u201d another investor, Spencer Lazar, partner at General Catalyst, said in a statement. \u201cWith its playful building-block interface, Universe transforms the slow, esoteric process of web design into a simple, creative mobile experience.\u201d While Universe sites are desktop-friendly, there are no plans to develop a desktop version of the builder. \u201cI really think that we can go very far with mobile,\u201d Cohen said. \u201cMy feeling is that the phone has so much creative potential as a tool. I think that a lot more of the web is going to be consumed and created on mobile.\u201d": 4,
+        "Unipart Rail is the exclusive UK distribution partner for the new Gripple Rail Dropper, which has now received Network Rail Product approval.\n\nUnipart Rail has formed a new and exclusive partnership with FuelActive and together they are delivering an innovative solution to the rail sector.\n\nEco Insight will launch today, (2 May) and will help Unipart and its customers reduce cost, and monitor carbon and energy consumption across commercial and industrial buildings.\n\nCharlotte Armstrong has been appointed HR Director and joins the Unipart Logistics Leadership Team.\n\nKatherine will lead the design, offer and delivery of value-added solutions that incorporate greater levels of automation and digital.\n\nUnipart Rail has sold its Westcode UK business to Knorr-Bremse.\n\nUnipart Group has sold its Intertruck business to Sampa.\n\nScott Bairstow has been appointed Head of Aerospace Business Development at Unipart Logistics.\n\nHyperbat, Unipart's electric vehicle battery production facility joint venture, will supply battery packs for the new all-electric Lotus Evija.\n\nAdam Jones has been appointed Business Development and Sector Strategies Director, Unipart Logistics.\n\nUnipart has won two awards at this year's Automotive Global Awards for pioneering EV battery manufacturing and supply chain solutions.\n\nUnipart Chief Finance Officer Darren Leigh has been appointed Unipart Group Chief Executive reporting to John M Neill who continues as full time Unipart Group Executive Chairman.\n\nUnipart will be responsible for warehousing, kitting and line feed logistics to Airbus' on-site wing assembly lines in both Broughton and Bristol.\n\nThe Shadow Chancellor of the Exchequer visited Unipart House this week to learn about how The Unipart Way can make organisations more productive.\n\nUnipart will take responsibility for the JCB World Logistics warehouse in Staffordshire together with UK in-plant operations.\n\nUnipart Group has announced its financial results for the year ended 31 December 2021.\n\nJulie Carrier has been appointed Chief Commercial Officer, Unipart Rail.\n\nUnipart Rail has formed a new partnership with Gripple and together they are bringing a revolutionary new innovation to the rail industry - the Gripple Rail Dropper.\n\nUnipart Group Australia has appointed Mark Carling as Managing Director of Unipart Australia and Asia, effective 15 August 2022.\n\nProfessor David Grayson CBE gave a talk on sustainability to local business leaders at the Unipart Conference Centre.\n\nUnipart Logistics achieved the highest-scoring application of the 647 received ranking them the safest organisation in the world.\n\nUnipart Logistics is supporting NHS Supply Chain with the introduction of eight fully electric trucks at four locations in England.\n\nRenewed partnership will empower Unipart Group to deliver supply chain excellence and IT Services in the cloud.\n\nComms Design is pleased to share its recent successful delivery of 'request to stop' kiosks to Network Rail for installation across eight stations in the Scottish Highlands.\n\nThe Volkswagen Group has signed a two-year contract extension with Unipart Logistics to support their UK and Ireland aftermarket supply chain.\n\nUnipart Logistics has won a three-year contract to provide customer services across Jaguar Land Rover's North American aftermarket.\n\nUnipart Logistics has signed a five-year contract to support Jaguar Land Rover's US expansion from a new facility in New Jersey.\n\nDame Rosie Winterton MP was among visitors to Doncaster's new \u00a392m rail technology hub.\n\nUnipart Logistics has now raised a total of over \u00a345,000 thanks to a team of six Unipart colleagues recently completing a gruelling 450km cycle ride between two air ambulance charity airbases.\n\nUnipart Logistics is enhancing its fleet of sustainable vehicles across the NHS Supply Chain operation with the aim of creating a long-term carbon neutral fleet.\n\nThe UK Rail Research and Innovation Network (UKRRIN), the \u00a392m partnership between academia and industry, has launched a new Technology and Innovation Hub at Unipart Rail's Headquarters in Doncaster.\n\nUnipart Logistics has signed a contract with global digital health company Prenetics to deliver Covid-19 test kit fulfilment services.\n\nUnipart Rail and McCulloch Group have officially launched the first zero-emissions Trac Rail Transposer.\n\nNeil McNicholas has been appointed the new Managing Director for Unipart Rail effective immediately.\n\nA major new initiative to accelerate the development of new technologies for the rail industry Digi-Rail was officially launched in a virtual event.\n\nUnipart Logistics has secured a five-year contract to run the new, custom-built Jaguar Land Rover Global Parts Logistics Centre, which will open in 2022.\n\nUnipart Group has announced its financial results for the year ended 31 December 2020.\n\nUnipart's joint venture with Williams Advanced Engineering, is using the latest 5G-enabled technology to speed up its manufacturing process.\n\nThe joint venture between Unipart and Rolls Royce has invested \u00a3565k in Sheffield City Region to create engineering jobs and take more digital products to market.\n\nUnipart Logistics has won a five-year contract extension in the US with Pro:Direct Sport, the world's largest online specialist sports store.\n\nUnipart Rail has won a prestigious Sword of Honour from the British Safety Council, the pinnacle of world-class health and safety management.\n\nUnipart Logistics has won another prestigious Sword of Honour, recognised as the pinnacle of achievement in the world of health and safety management.\n\nUnipart Logistics has achieved a five-star rating from the British Safety Council for its commitment to environmental sustainability.\n\nUnipart Logistics was the proud recipient of the Service Excellence Award at the 2020 Automotive Global Awards.\n\nUnipart Group has successfully built its first McCulloch Rail Panel Lifter at a new production facility in Coventry.\n\nUnipart Group has won an award for the best in-house corporate communications response to the pandemic.\n\nUnipart Logistics has extended its partnership with Kubota UK to provide Aftermarket warehouse operations for another five years.\n\nUnipart Rail, a division of Unipart Group, has formed a partnership with Andiman & Co to accelerate growth in the European rail market.\n\nMetLase, the joint venture between Rolls-Royce and Unipart, has produced a range of high-tech assembly stations which were used in ventilator production.\n\nUnipart Logistics has been crowned overall country winner in the UK and Ireland in the British Safety Council 2020 International Safety Awards.\n\nUnipart Group has announced the appointment of Darren Leigh as Group Chief Financial Officer with effect from the beginning of May.\n\nGroup turnover rose 11.7% to \u00a3799.2m and Group profit grew by 5.4% to \u00a327.3m.\n\nUnipart Logistics has won a three-year contract to service the new Jaguar Land Rover Battery Assembly Centre in the West Midlands.\n\nSerck, part of Unipart Group, will design and manufacture 19 heat exchangers for a Nigerian oil company.\n\nBosch has acquired Unipart Group's Automotive Aftermarket workshop programmes in the UK.\n\nThe Unipart Leadership Gate to Great course has won a Princess Royal Training Award.\n\nUnipart Logistics is proud to announce a new national fundraising partnership with Air Ambulances UK.\n\nUnipart Logistics has succeeded in securing a three-year contract extension with Kimberly-Clark for the management of UK warehouse operations in Barrow, Chorley and Northfleet through 2022.\n\nUnipart Logistics has won a five-year contract with Selco Builders Warehouse to run their end-to-end supply chain in the UK.\n\nUnipart Logistics has signed a new contract with Jaguar Land Rover to retain packing services for a further four years.\n\nUGL Unipart Rail Services Pty Ltd, a joint venture between Australian company UGL and Unipart, has secured an approximate $900m, five-year contract extension with Sydney Trains.\n\nSteve Ingleton, Engineering Director at Unipart Rail has been appointed as a visiting professor at the University of Huddersfield, within the Institute of Railway Research.\n\nNHS Supply Chain announces a new Regional Distribution Centre (RDC) in Bury St Edmunds in partnership with Unipart Logistics.\n\nUnipart Group Australia has signed a five-year exclusive distribution agreement with Sicut Enterprises Limited to sell Sicut Composite Railway Sleepers in Australia and New Zealand.\n\nUnipart Group, one of Europe's leading manufacturing, logistics and consulting businesses, has announced its financial results for the year ending 31 December 2018.\n\nSerck, a division of Unipart International, has won a \u00a33.8m contract to design, manufacture and install heat exchangers at a nuclear power station.\n\nThe Institute for Advanced Manufacturing and Engineering has received more than \u00a35m of funding following success training graduates.\n\nUnipart Logistics has extended its contract with Three UK to provide logistics and distribution services until 2023.\n\nUnipart Rail has acquired Westcode bringing the highly technical and skilled workforce into its wider operations.\n\nFor the third time Unipart Logistics have won the Aftermarket Award at the 2018 Automotive Global Awards - this time with a key customer, McLaren Automotive.\n\nUnipart now has amassed a total of over 50 Swords of Honour over eight years.\n\nMetLase, which is a joint venture between Rolls-Royce and Unipart, has been announced as the tooling and fixture partner for the world's largest aerospace manufacturer's new Sheffield facility in a deal that will initially increase the workforce by 15%.\n\nUnipart Logistics has won a new five-year contract with Volkswagen Group to run their UK aftermarket supply chain.\n\nRobots, artificial intelligence and joint working on a fictional theme park in Oxford brought Unipart Group's leaders of the future and 120 Year 10 students from Oxford Academy together recently.\n\nUnipart Rail, one of Unipart Group's key subsidiaries and a supplier of products and services to the global rail industry, has signed a partnership agreement with Gear Rail, leaders in rail safety and control solutions in Africa.\n\nUnipart Group, one of Europe's leading manufacturing, logistics and consulting businesses, has announced its financial results for the year ending 31st December 2017.\n\nUnipart Logistics has achieved a five-year contract extension with Sky.\n\nUnipart Logistics named European Reverse Logistics Partner for Liberty Global.\n\nUnipart Logistics, a leading provider of logistics and supply chain solutions, received a top award, for innovation at the recent Supply Chain Excellence Awards.\n\nUnipart Group, one of Europe's leading manufacturing, logistics and consultancy companies, has achieved its highest ever number of safety accolades in this year's British Safety Council Sword and Globe of Honour awards.\n\nUnipart Group has expanded their award-winning employee wellbeing programme by partnering up with Parent Zone, who are specialists in Digital Parenting, to offer all Unipart employees free help and advice about parenting in the digital age.\n\nUnipart Group and a major consortium of industrial partners have won funding to build a high performance, low volume flexible battery manufacturing facility in the UK.\n\nUnipart Rail have been awarded the Customer Focus and Collaboration Award by Siemens Rail Systems at their recent Supplier Recognition event.\n\nUnipart's Chairman and Group Chief Executive, John Neill CBE, won the coveted \"Outstanding Achievement\" Award at the annual Automotive Global Awards.\n\nUnipart received a record breaking number of accolades in this year's British Safety Council Sword and Globe of Honour awards.\n\nCBI Director-General Carolyn Fairbairn visited The Unipart Group headquarters in Oxford on Friday 26 August to learn about how the firm is unlocking its productivity potential through 'The Unipart Way'.\n\nA garden for women requiring a wide range of health services has been unveiled after a group of volunteers from Unipart, one of Europe's leading manufacturing, logistics and consultancy companies, brought it back into use.\n\nUnipart Logistics has achieved a double accolade, by winning top ratings forits Health and Safety performance and for its Environmental Management excellence in 2012.\n\nFor a third year running Unipart Group, one of Europe's leading private logistics, manufacturing and consultancy companies, has retained its platinum status in the Business in the Community's 2012 Corporate Responsibility Index - the UK's leading benchmark of responsible business.\n\nUnipart Rail has been awarded the Siemens Rail Systems Logistics contract.\n\nUnipart Group, one of Europe's leading full service logistics providers, has announced its financial results for the year ended 31 December 2011.\n\nUnipart Logistics, Unipart's specialist supply chain management business, has won a new, three-year contract with premium car manufacturer, Toyota Kirloskar Motor (TKM).": 4
+      },
+      "sample_values": [
+        "Unipart has been further recognised for its unrelenting commitment to world class health and safety as Overall Country Winner for the third consecutive year at the British Safety Council International Safety Awards 2022. In addition to being named the safest organisation in the UK, Unipart Logistics won the British Safety Council Chief Adjudicator Award for achieving the highest-scoring application of the 647 received from around the world, and was named Transport and Storage sector winner. Award judges were particularly impressed by Unipart\u2019s health and safety leadership, which encourages positive behaviours and ensures everyone knows their responsibility as an employee in the workplace. Exceptional management systems and controls underpinned Unipart\u2019s International Safety Award success, with the tools and techniques of The Unipart Way empowering every employee to continuously improve processes in their areas of the business. These management systems are set to see Unipart Logistics achieve the final certification of the ISO 45001 Health and Safety Management Standard across all its sites. Unipart will add these latest awards to more than 60 British Safety Council Swords of Honour achieved since 2011 across the Group, more than any other organisation in its sectors. Mike Robinson, Chief Executive of the British Safety Council, congratulated Unipart on their success in being named Country Winner \u2013 UK in the International Safety Awards 2022. \u201cThe British Safety Council commends Unipart on their achievement.",
+        "On behalf of CIM OOS Tiradentes, Mr Jose Marcio Vidal (Contract Manager OOS Brazil) received the safety award for completing another year without a Lost Time Incident (LTI) from the International Association of Drilling Contractors (IADC) This award is granted to those associated offshore units which have operated 12 months without a LTI and the period runs from October 1st till September 30th the following year. In 2017 the Brazilian chapter of the IADC allowed flotel and FPSO operators to participate as these offshore facilities have a lot in common with offshore drilling units and face similar offshore industry challenges. Since then OOS International has been an active member of the IADC and received two safety awards in 2018. This year\u2019s awards were presented to peers form the industry during a festive gala dinner where another year without a LTI is celebrated. In addition to CIM OOS Tiradentes other awards were given to Transocean, Ocyan and Etesco amongst others. To receive this award is a recognition from the industry OOS International work in, where safety is a must.",
+        "More than 270 million people rely on Teams for hybrid work. Including a great deal of NWN Carousel\u2019s customers who trust its expertise to create a connected experience for end-users adopting a hybrid workforce. Rapid migrations away from traditional telephony solutions fueled its mission to provide both on premise and cloud based Microsoft implementations, upgrades, and migrations. With the global pandemic, organizations were left scrambling and adopting solutions that weren\u2019t necessarily part of their strategic plans. Exiting the pandemic, organizations are now laser-focused on consolidating their communication needs into their overall strategic objectives, primarily Microsoft 365. As a result, its customers saved nearly $20 million in hard costs by leveraging the resiliency and security of Teams Calling and Meetings. NWN Carousel\u2019s high level of certification, and Microsoft Gold partner status, has enabled NWN Corporation to design and quickly create a path for customers to Microsoft Teams collaboration and meetings. As a result, with nearly 400 nominees from over 100 countries, NWN Corporation is pleased to announce NWN Carousel was recognized as a Global Winner for 2022 Microsoft Meetings, Calling & Devices for Microsoft Teams Partner of the Year Award. NWN Corporation help customers transform their communication strategy by leveraging the resiliency and security of Teams Calling and Meetings. This service, which is integrated in less than 30 minutes, provides cost attractive ROIs at a fraction of the cost of other UCaaS solutions from Zoom or Ring Central. Based on its extensive design, implementation, migration experience, certifications, proven and repeatable project methodology, and project management approach, NWN Carousel is uniquely qualified to deliver highly successful Microsoft solutions.",
+        "Grape Solutions and MVM Mobiliti partner with Innogy CZ, a leading Energy & Utility company in the Czech Republic, to enable effortless and convenient electric car charging for Czech motorists. The development was carried out in cross-border cooperation between three companies of the MVM Group.\n\nMVM Mobiliti and Grape Solutions have been working together since 2018 to develop the Mobiliti app, becoming the most downloaded electric car charging app in Hungary, with more than 215,000 charging stations in 39 countries. Based on the concept of Mobiliti, Grape Solutions and MVM Mobiliti launched their joint white-label EV charging platform, Montu.\n\nInnogy is a crucial member in ensuring natural gas and electricity to Czech customers and delivering clean mobility solutions in the Czech Republic. Grape Solutions implemented Montu for Innogy to enable its registered users to start electric vehicle charging seamlessly and help Czech operators manage charging points in a fraction of time. Czech electric car owners also have information on occupied stations, are able to start their charging with one tap and receive automated billing when finished.\n\nOperators get access to the Admin Management platform that covers all the necessary information needed for seamless mobility operations. The robust software keeps operators informed real time and receives all issues or feedback deriving from the drivers side.\n\nUsing Montu, a white label application, was a kick start into its electric cars charging application development. The standard application was relatively quickly adjusted to Czech market specifics. The wide range of available features allows for swift further extensions, said Petr Matousek, Chief Technology Officer of Innogy CZ Plc.\n\nThe partnership with Innogy is crucial for its market penetration as it is the first time IQ Stock has implemented its e-mobility Software as a Service, Montu, abroad. Grape Solutions is set to enable its turnkey e-mobility platform across countries as IQ Stock is strongly committed to sustainable developments. IQ Stock believe that together with Innogy and MVM Mobiliti, IQ Stock will better highlight the importance of electric charging in the Central European region and beyond, added Szilrd Szll, CEO of Grape Solutions Plc.\n\nThree-model series makes grab-and-go power easy through industry-leading recharging speeds and LFP batteries in a compact form factor. SYDNEY, April 3, 2023...\n\n(RTTNews) - Tesla Inc.'s (TSLA) first-quarter vehicle deliveries rose 36% from last year, following the luxury electric major's decision to cut prices of its...\n\nTesla (TSLA) announced today it delivered 422,875 electric vehicle (EV) units in the first quarter of 2023, missing Street expectations for 432,000...\n\nThe electric car companys decision to slash prices appears to have paid off in reviving demand. Tesla sales rose 5 percent in the first three months of the...\n\nKey Points Tesla posted its first-quarter vehicle productionand deliveries report for 2023 on Sunday. Deliveries are the closest approximation of sales...\n\nThe deliveries were in line with analysts estimates of 421,164 units, but fell short of Musks goal of 50 per cent annual growth Tesla had slashed prices...\n\nLast year, the electric vehicle sector crossed a global milestone, with one out of ten vehicles sold being electric for the first time ever. While that slice...\n\nGeo Murickan, President and CEO of Pioneer Power Mobility, to Discuss Trends in EV Charging and Opportunities for Innovators FORT LEE, N.J., March 27, 2023...\n\nKey Points Li Auto delivered 20,823 vehicles in March for a total of 52,584 deliveries in the first three months of the year. Xpeng only delivered 18,230...\n\nEUROPEAN Union negotiators agreed to roll out electric and hydrogen charging points across the region over the next few years to support the transition from...\n\nIn the first quarter, IQ Stock produced over 440,000 vehicles and delivered over 422,000 vehicles. IQ Stock continued to transition towards a more even regional mix of...\n\nRugged, two-in-one portable electric vehicle charger qualifies for eligibility of CAD $600 home charging station rebate in Qu\u00e9bec ST. PETERSBURG, Fla., March...\n\nThe Fleet Electrification Referral Program will connect customers with best-in-class operators that specialize in end-to-end electric vehicle (EV) charging...\n\nManufacturers of electric cars are using exaggerated driving ranges as the official tests to not reflect real life, a study has revealed. More than 70...\n\nDETROIT (AP) Tesla's first-quarter vehicle sales rose 36% after the company cut prices twice in a bid to stimulate demand. The electric car, SUV and heavy...\n\nTESLA on Sunday (Apr 2) missed estimates for first-quarter deliveries as rising competition and a bleak economic outlook overshadowed the electric-vehicle...\n\nTesla Inc. delivered 422,875 vehicles in the first quarter, the electric-vehicle company said Sunday. The companys delivery figure came up shy of the...\n\nPower Electronics for Electric Vehicle Market Share OREGAON, PORTLAND, UNITED STATES, March 30, 2023 / EINPresswire.com / -- As per the report published by...\n\nNews aggregator IqFin.net - all main news from the world of finance, investment, business, stocks, cryptocurrencies, bonds, commodities, technology from the top sources around the world. Stay up to date with major world events, create your own news feeds, save time reading news.",
+        "NWN Carousel, the leading integrated cloud communications service provider, today announced two new kits, At-Home Essentials and Office Collaboration Room-as-a-Service, for organizations to manage the accelerating demands of the hybrid workplace with connectivity, security, devices and visual collaboration. At-Home Essentials offers bundled internet connectivity, wireless access, security, devices, end-user support and video conferencing endpoints. Office Collaboration Room-as-a-Service features integrated visual collaboration hardware, software and services that support the return-to-office experience. \u201cWe are seeing an increased demand from businesses, educational institutions, state and local agencies to support their blended hybrid schedules of employees and the need for seamless collaboration. Tightly secure cloud-based communications integration is no longer a luxury for businesses; it's a must.\u201d Office Collaboration Room-as-a-Service is an integrated solution with hardware, software and services delivered with a flexible consumption model to support an organization\u2019s experience when returning to the office. \u201cWe\u2019ve partnered with NWN Carousel to transform our physical offices with integrated collaboration spaces that help enable our teams to have a consistent, secure, and productive work experience as they collaborate with internal teams and clients,\u201d said David Wilson, Head of Digital Workplace Services, Silicon Valley Bank. Our integrated devices, communications apps, AI-enabled contact centers, networking, security, and analytics allows our customers to learn, discover, work, and connect from anywhere - all delivered as a cloud service that\u2019s simple to use and manage. Internet Explorer presents a security risk."
+      ]
+    },
+    "article_image_url": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 4032,
+      "null_percentage": 80.77,
+      "unique_count": 902,
+      "unique_percentage": 18.07,
+      "avg_length": 99.42,
+      "max_length": 451,
+      "min_length": 29,
+      "most_frequent": {
+        "https://ml-eu.globenewswire.com/Resource/Download/0ccdb9df-e10a-43bb-9feb-08390bd8460a": 5,
+        "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png": 5,
+        "https://s.tradingview.com/static/images/illustrations/news-story.jpg": 4
+      },
+      "sample_values": [
+        "https://media.zenfs.com/en/business-wire.com/bad3556440be69a1d86b657c0a3ff374",
+        "https://sekijwe.com/images/keven.jpg",
+        "https://blog.tipranks.com/wp-content/uploads/2022/09/shutterstock_1388100275-3-750x406.jpg",
+        "https://www.australianresourcesandinvestment.com.au/wp-content/uploads/2024/12/AdobeStock_478495766-1024x683-1.jpeg",
+        "https://nwncarousel.com/wp-content/uploads/2024/11/NWN-1.jpg"
+      ]
+    },
+    "location_data_first": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 3695,
+      "null_percentage": 74.02,
+      "unique_count": 476,
+      "unique_percentage": 9.54,
+      "avg_length": 134.65,
+      "max_length": 158,
+      "min_length": 121,
+      "most_frequent": {
+        "{'city': None, 'state': None, 'zip_code': None, 'country': 'United Kingdom', 'region': None, 'continent': None, 'fuzzy_match': False}": 78,
+        "{'city': None, 'state': None, 'zip_code': None, 'country': 'India', 'region': None, 'continent': None, 'fuzzy_match': False}": 71,
+        "{'city': None, 'state': None, 'zip_code': None, 'country': 'United States', 'region': None, 'continent': None, 'fuzzy_match': False}": 60
+      },
+      "sample_values": [
+        "{'city': None, 'state': None, 'zip_code': None, 'country': 'United Kingdom', 'region': None, 'continent': None, 'fuzzy_match': False}",
+        "{'city': None, 'state': None, 'zip_code': None, 'country': 'Hungary', 'region': None, 'continent': None, 'fuzzy_match': False}",
+        "{'city': 'Sydney', 'state': None, 'zip_code': None, 'country': 'Australia', 'region': None, 'continent': None, 'fuzzy_match': False}",
+        "{'city': 'Boston', 'state': 'Massachusetts', 'zip_code': None, 'country': 'United States', 'region': None, 'continent': None, 'fuzzy_match': False}",
+        "{'city': 'Boston', 'state': 'Massachusetts', 'zip_code': None, 'country': 'United States', 'region': None, 'continent': None, 'fuzzy_match': False}"
+      ]
+    },
+    "source_file": {
+      "data_type": "object",
+      "total_count": 4992,
+      "null_count": 0,
+      "null_percentage": 0.0,
+      "unique_count": 24,
+      "unique_percentage": 0.48,
+      "avg_length": 34.0,
+      "max_length": 34,
+      "min_length": 34,
+      "most_frequent": {
+        "news_events_2025_07_07.00000.jsonl": 208,
+        "news_events_2025_07_07.00001.jsonl": 208,
+        "news_events_2025_07_07.00103.jsonl": 208
+      },
+      "sample_values": [
+        "news_events_2025_07_07.00000.jsonl",
+        "news_events_2025_07_07.00000.jsonl",
+        "news_events_2025_07_07.00000.jsonl",
+        "news_events_2025_07_07.00000.jsonl",
+        "news_events_2025_07_07.00000.jsonl"
+      ]
+    }
+  },
+  "business_insights": {
+    "event_categories": {
+      "total_categories": 29,
+      "distribution": {
+        "launches": 1615,
+        "partners_with": 1024,
+        "hires": 563,
+        "recognized_as": 223,
+        "receives_award": 166,
+        "is_developing": 147,
+        "invests_into": 146,
+        "acquires": 132,
+        "invests_into_assets": 110,
+        "has_issues_with": 105,
+        "attends_event": 85,
+        "receives_financing": 75,
+        "expands_facilities": 74,
+        "leaves": 69,
+        "opens_new_location": 63,
+        "signs_new_client": 54,
+        "increases_headcount_by": 49,
+        "closes_offices_in": 43,
+        "sells_assets_to": 38,
+        "integrates_with": 33,
+        "identified_as_competitor_of": 30,
+        "promotes": 27,
+        "expands_offices_to": 22,
+        "decreases_headcount_by": 21,
+        "retires_from": 20,
+        "files_suit_against": 17,
+        "merges_with": 15,
+        "expands_offices_in": 15,
+        "goes_public": 11
+      },
+      "most_common": {
+        "launches": 1615,
+        "partners_with": 1024,
+        "hires": 563,
+        "recognized_as": 223,
+        "receives_award": 166
+      },
+      "rare_categories": []
+    },
+    "company_coverage": {
+      "total_companies": 1259,
+      "companies_with_multiple_events": 305,
+      "most_active_companies": {
+        "Apple": 189,
+        "DHL Express": 161,
+        "Amazon.com, Inc.": 157,
+        "Marriott International, Inc.": 143,
+        "Ericsson": 137,
+        "Foxconn Technology Group": 131,
+        "UNICEF": 104,
+        "HDFC": 94,
+        "Native Instruments GmbH": 81,
+        "Reuters": 75
+      },
+      "single_event_companies": 954
+    },
+    "geographic_distribution": {
+      "total_locations": 559,
+      "location_coverage": {
+        "United Kingdom": 78,
+        "India": 73,
+        "United States": 60,
+        "Australia": 53,
+        "New Zealand": 26,
+        "Singapore, Singapore": 25,
+        "New York, New York, United States": 23,
+        "New Delhi, India": 18,
+        "Saudi Arabia": 15,
+        "London, United Kingdom": 15,
+        "China": 14,
+        "France": 14,
+        "Europe": 12,
+        "Melbourne, Australia": 12,
+        "Las Vegas, Nevada, United States": 10,
+        "Sydney, Australia": 10,
+        "Israel": 9,
+        "Arizona, United States": 9,
+        "Boston, Massachusetts, United States": 9,
+        "United Arab Emirates": 9
+      },
+      "missing_location_rate": 71.69
+    },
+    "confidence_analysis": {
+      "mean_confidence": 0.6166,
+      "median_confidence": 0.6568,
+      "std_confidence": 0.2633,
+      "high_confidence_events": 712,
+      "medium_confidence_events": 1379,
+      "low_confidence_events": 2901,
+      "confidence_distribution": {
+        "0.9-1.0": 712,
+        "0.8-0.9": 554,
+        "0.7-0.8": 825,
+        "0.6-0.7": 829,
+        "< 0.6": 2072
+      }
+    },
+    "temporal_analysis": {
+      "total_events_with_dates": 4992,
+      "date_range": {
+        "earliest": "2010-12-25T23:00:00+00:00",
+        "latest": "2025-07-02T17:30:34+00:00",
+        "span_days": 5302
+      },
+      "events_by_year": {
+        "2010": 1,
+        "2011": 4,
+        "2012": 4,
+        "2013": 13,
+        "2014": 23,
+        "2015": 26,
+        "2016": 65,
+        "2017": 262,
+        "2018": 429,
+        "2019": 572,
+        "2020": 625,
+        "2021": 661,
+        "2022": 690,
+        "2023": 839,
+        "2024": 476,
+        "2025": 302
+      },
+      "events_by_month": {
+        "2010-12": 1,
+        "2011-06": 1,
+        "2011-08": 1,
+        "2011-09": 1,
+        "2011-12": 1,
+        "2012-08": 1,
+        "2012-09": 2,
+        "2012-10": 1,
+        "2013-02": 3,
+        "2013-03": 1,
+        "2013-04": 3,
+        "2013-05": 1
+      },
+      "recent_activity": {
+        "last_30_days": 0,
+        "last_90_days": 38,
+        "last_year": 473
+      }
+    },
+    "financial_events": {
+      "total_financial_events": 283,
+      "total_amount": 393019460000.0,
+      "average_amount": 1388761342.76,
+      "median_amount": 61000000.0,
+      "financing_types": {
+        "grant": 11,
+        "funding": 5,
+        "Series A": 4,
+        "Series B": 3,
+        "grants": 2,
+        "government funding": 2,
+        "federal grant": 2,
+        "donation": 2,
+        "funding round": 2,
+        "donations": 1,
+        "federal Upward Bound grant": 1,
+        "venture capital": 1,
+        "investment": 1,
+        "federal government grant": 1,
+        "community grant": 1,
+        "initial commitments": 1,
+        "round": 1,
+        "financing round": 1,
+        "state grant": 1,
+        "Seed-Start grant": 1,
+        "workforce grant": 1,
+        "credit": 1,
+        "equity funding": 1,
+        "Series C": 1,
+        "financing": 1,
+        "gift": 1,
+        "federal funds": 1,
+        "cash grants": 1,
+        "loan": 1,
+        "Seed": 1,
+        "additional funding": 1,
+        "IPOs": 1,
+        "Angel": 1,
+        "super-priority financing": 1,
+        "equity": 1,
+        "cryptocurrency donation": 1,
+        "equity investment": 1,
+        "Series D": 1,
+        "Series E": 1,
+        "grant funding": 1,
+        "initial funding round": 1,
+        "initial donation": 1,
+        "exit financing": 1
+      },
+      "largest_amounts": [
+        {
+          "company_name": "Reuters",
+          "amount_normalized": 68000000000.0,
+          "financing_type": null
+        },
+        {
+          "company_name": "Amazon.com, Inc.",
+          "amount_normalized": 26000000000.0,
+          "financing_type": null
+        },
+        {
+          "company_name": "Dominion",
+          "amount_normalized": 14000000000.0,
+          "financing_type": null
+        },
+        {
+          "company_name": "Foxconn Technology Group",
+          "amount_normalized": 14000000000.0,
+          "financing_type": null
+        },
+        {
+          "company_name": "Foxconn Technology Group",
+          "amount_normalized": 10000000000.0,
+          "financing_type": null
+        }
+      ]
+    }
+  },
+  "data_quality_preview": {
+    "completeness_preview": {
+      "event_id": {
+        "missing_count": 0,
+        "missing_percentage": 0.0
+      },
+      "summary": {
+        "missing_count": 0,
+        "missing_percentage": 0.0
+      },
+      "category": {
+        "missing_count": 0,
+        "missing_percentage": 0.0
+      },
+      "found_at": {
+        "missing_count": 0,
+        "missing_percentage": 0.0
+      },
+      "confidence": {
+        "missing_count": 0,
+        "missing_percentage": 0.0
+      },
+      "company_name": {
+        "missing_count": 91,
+        "missing_percentage": 1.82
+      }
+    },
+    "uniqueness_preview": {
+      "duplicate_event_ids": 1,
+      "duplicate_summaries": 17,
+      "potential_duplicates_rate": 0.02
+    },
+    "validity_preview": {
+      "invalid_confidence_scores": 0,
+      "confidence_out_of_range_rate": 0.0,
+      "confidence_stats": {
+        "min": 0.0,
+        "max": 1.0
+      }
+    },
+    "consistency_preview": {
+      "category_variations": 29,
+      "category_list": [
+        "recognized_as",
+        "receives_award",
+        "is_developing",
+        "launches",
+        "receives_financing",
+        "hires",
+        "partners_with",
+        "attends_event",
+        "invests_into_assets",
+        "promotes",
+        "expands_offices_to",
+        "acquires",
+        "sells_assets_to",
+        "leaves",
+        "signs_new_client",
+        "closes_offices_in",
+        "files_suit_against",
+        "invests_into",
+        "opens_new_location",
+        "increases_headcount_by"
+      ]
+    }
+  },
+  "sample_records": {
+    "high_quality_example": {
+      "event_id": "009be1ff-6cfb-4e9f-a415-69baf71f47f3",
+      "summary": "OOS International received award two safety awards on Jan 1st '18.",
+      "confidence": 0.9497,
+      "company_name": "OOS International",
+      "category": "receives_award",
+      "location": null
+    },
+    "low_quality_example": {
+      "event_id": "01444124-7375-4f03-8879-eb8200b31504",
+      "summary": "NWN Corporation received award Global Winner for 2022 Microsoft Meetings, Calling & Devices for Micr...",
+      "confidence": 0.6887,
+      "company_name": "NWN Corporation",
+      "category": "receives_award"
+    },
+    "missing_data_example": {
+      "event_id": "80d84ddf-e396-43fb-9376-cd45df32091e",
+      "missing_fields": [
+        "company_name"
+      ],
+      "available_data": {
+        "summary": "Ian Truesdale left Unipart Manufacturing Group as Managing Director on Feb 1st '25.",
+        "category": "leaves"
+      }
+    }
+  }
+}

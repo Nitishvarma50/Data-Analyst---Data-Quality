@@ -1,0 +1,75 @@
+# News Events Data Quality Assessment Configuration
+
+# Data paths
+data_paths:
+  raw_data_dir: "E:/Nitish Files/Datasets-2025-08-08/Datasets-2025-08-08"
+  processed_data_dir: "data/processed"
+  quality_reports_dir: "data/quality_reports"
+
+# Data processing settings
+processing:
+  chunk_size: 1000  # Process large files in chunks
+  max_records_sample: 10000  # For initial profiling
+  encoding: "utf-8"
+
+# Data Quality thresholds
+quality_thresholds:
+  completeness:
+    critical_fields_min: 95.0  # % for critical fields
+    optional_fields_min: 70.0  # % for optional fields
+  uniqueness:
+    duplicate_rate_max: 1.0  # Max % of duplicates allowed
+  validity:
+    confidence_score_min: 0.0
+    confidence_score_max: 1.0
+    uuid_format_compliance_min: 99.0
+  consistency:
+    category_standardization_min: 95.0
+    location_standardization_min: 90.0
+  timeliness:
+    max_detection_lag_days: 30
+    stale_data_threshold_days: 365
+
+# Critical fields for assessment
+critical_fields:
+  - event_id
+  - summary
+  - category
+  - found_at
+  - confidence
+  - company_name
+
+# Optional fields that impact business value
+optional_fields:
+  - location
+  - amount
+  - effective_date
+  - contact
+  - award
+  - product
+
+# Database configuration
+database:
+  type: "sqlite"  # sqlite, postgresql, mysql
+  name: "news_events_dq.db"
+  host: "localhost"
+  port: 5432
+
+# Dashboard configuration
+dashboard:
+  host: "127.0.0.1"
+  port: 8050
+  debug: true
+
+# Monitoring settings
+monitoring:
+  alert_thresholds:
+    completeness_drop: 5.0  # Alert if completeness drops by 5%
+    duplicate_spike: 2.0    # Alert if duplicates increase by 2%
+    confidence_drop: 0.1    # Alert if avg confidence drops by 0.1
+
+# Logging
+logging:
+  level: "INFO"
+  file: "logs/dq_assessment.log"
+  format: "{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}"

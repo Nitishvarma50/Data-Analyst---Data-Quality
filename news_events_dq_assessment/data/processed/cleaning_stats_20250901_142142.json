@@ -1,0 +1,21 @@
+{
+  "cleaning_stats": {
+    "records_processed": 4992,
+    "records_cleaned": 3425,
+    "duplicates_removed": 1567,
+    "locations_standardized": 49,
+    "categories_normalized": 0,
+    "invalid_data_fixed": "212",
+    "missing_data_filled": "1604"
+  },
+  "cleaning_log": [
+    "Removed 1 duplicate event IDs",
+    "Removed 138 semantic duplicates",
+    "Removed 1454 composite duplicates",
+    "Standardized 49 location variations",
+    "Fixed 212 amounts in amount",
+    "Filled 1604 effective dates",
+    "Cleaning completed: 3,425 clean records from 4,992 original"
+  ],
+  "cleaning_timestamp": "2025-09-01T14:21:46.010854"
+}
