@@ -194,6 +194,21 @@ database:
 - **Database optimization**: Indexed queries and connection pooling
 - **Incremental updates**: Process only new/changed data
 
+## 📊 Dashboard
+
+An interactive dashboard was built using **Plotly Dash** to visualize data quality metrics, trends, and remediation impact.  
+
+You can view a snapshot of the dashboard here:  
+[📄 News Events Data Quality Dashboard (PDF)](https://github.com/Nitishvarma50/Data-Analyst---Data-Quality/blob/main/news_events_dq_assessment/News%20Events%20Data%20Quality%20Dashboard.pdf)
+
+### Dashboard Highlights
+- Overall Quality Score across 5 dimensions
+- Completeness, Uniqueness, Validity, Consistency, Timeliness breakdown
+- Trends of data quality improvement over time
+- Event distribution by category with confidence levels
+- Database statistics and issue recommendations
+
+
 ## 🧪 Testing
 
 ### Run Tests
